@@ -1,0 +1,76 @@
+section.signup-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(20, 20, 20, 0.479);
+  z-index: 102;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form.signup-form {
+  background: white;
+  width: max-content;
+  position: relative;
+  padding: 2.3rem;
+  border-radius: 0.3rem;
+}
+p.heading,
+p.subheading {
+  text-align: center;
+}
+p.heading {
+  font-weight: 600;
+  font-size: 1.9rem;
+  margin-bottom: 0.8rem;
+}
+p.subheading {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+form.signup-form input {
+  width: 20rem;
+  margin-bottom: 0.5rem;
+  border: 1.7px solid #c9c9c9;
+  border-radius: 0.2rem;
+  padding: 0.6rem 0.7rem;
+}
+form.signup-form input:focus {
+  border: 1.7px solid var(--black);
+}
+
+.auth-close-btn {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  background: white;
+  padding: 0.25rem 0.2rem 0.2rem;
+  border-radius: 50%;
+  box-shadow: 10px 20px 25px 5px #8f8e8e62;
+  cursor: pointer;
+}
+
+form.signup-form button {
+  width: 100%;
+  padding: 0.6rem;
+  border: none;
+  color: white;
+  background: var(--black);
+  border-radius: 0.3rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+@media (max-width: 500px) {
+  form.signup-form input {
+    width: 100%;
+    padding: 0.5rem 0.6rem;
+  }
+  form.signup-form button {
+    padding: 0.5rem;
+  }
+}

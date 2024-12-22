@@ -1,0 +1,78 @@
+section.hero {
+  width: 100%;
+  background: red;
+  position: relative;
+  max-height: 30rem;
+  min-height: 25rem;
+  background: url("../../assets/hero-img.jpg");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section.hero section {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.24);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div.hero-content {
+  padding: 0rem 2rem;
+}
+p.preheading {
+  font-size: 0.95rem;
+  color: rgb(218, 218, 218);
+  line-height: 0;
+  margin-bottom: 0.1rem;
+}
+p.hero-heading {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 0rem;
+  color: white;
+}
+section.hero p.body {
+  font-size: 1rem;
+  line-height: 1.7rem;
+  color: whitesmoke;
+}
+button#hero-btn {
+  margin-top: 0.3rem;
+  background: none;
+  color: white;
+  border: 1.9px solid white;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0.3rem 0.4rem 0.4rem;
+}
+
+@media (max-width: 980px) {
+  div.hero-content {
+    padding: 0rem 1.5rem;
+  }
+}
+@media (max-width: 700px) {
+  p.hero-heading {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  div.hero-content {
+    padding: 0rem 0.8rem;
+  }
+  p.hero-heading {
+    font-size: 2.2rem;
+  }
+}

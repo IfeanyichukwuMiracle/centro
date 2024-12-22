@@ -1,0 +1,25 @@
+section.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: none;
+  background: white;
+}
+section.footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1.9px solid #f4f4f4;
+  padding: 0.6rem;
+}
+
+.footer-icon {
+}
+
+@media (max-width: 500px) {
+  section.footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    box-shadow: 10px -20px 25px 10px #8f8e8e18;
+  }
+}

@@ -1,0 +1,74 @@
+section.menu {
+  min-height: 100vh;
+  max-height: 100rem;
+  padding: 2rem 1.5rem;
+  background: white;
+  min-width: max-content;
+  width: 16.3rem;
+  box-shadow: 10px 20px 25px 5px #8f8e8e18;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  gap: 7rem;
+  transition: all 0.3s ease-in-out;
+}
+section.menu ul {
+  list-style: none;
+  font-size: 1.03rem;
+}
+section.menu ul li {
+  margin-bottom: 1.3rem;
+}
+div.auth-btns {
+  width: 100%;
+}
+div.auth-btns button {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.6rem;
+  cursor: pointer;
+}
+
+#login-btn {
+  background: var(--black);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.3rem 0 0.4rem;
+  border-radius: 0.3rem;
+  border: 1px solid var(--black);
+}
+#register-btn {
+  background: white;
+  color: var(--black);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.3rem 0 0.4rem;
+  border-radius: 0.3rem;
+  border: 1px solid var(--black);
+}
+#logout-btn {
+  background: var(--black);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.3rem 0 0.4rem;
+  border-radius: 0.3rem;
+  border: 1px solid var(--black);
+}
+
+.close-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.4rem;
+}
+
+.hide {
+  left: -300px;
+}
+.show {
+  left: 0;
+}

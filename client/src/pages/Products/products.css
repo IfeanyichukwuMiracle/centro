@@ -1,0 +1,119 @@
+section.products-page {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  margin: 1rem 0 2rem;
+  gap: 2.5rem;
+}
+
+.category-heading {
+  margin: 1.5rem 0 0;
+  padding: 0 2rem;
+}
+.category-title {
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+.category-heading-links {
+  font-size: 0.87rem;
+}
+
+ul.category-links {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  text-transform: capitalize;
+  font-size: 1rem;
+  list-style: none;
+  color: black;
+}
+.products-container {
+  width: 80%;
+}
+
+ul.category-links li {
+  cursor: pointer;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+  width: max-content;
+  transition: all 0.1s ease-in-out;
+}
+ul.category-links li:hover {
+  text-decoration: underline;
+}
+
+section.inner-products-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+section.inner-products-container div#product {
+  box-shadow: var(--box-shadow);
+}
+
+div.nil-products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10rem;
+  text-align: center;
+}
+div.nil-products p {
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+  font-size: 1.4rem;
+}
+
+@media (max-width: 980px) {
+  section.products-page {
+    padding: 2rem 1.6rem;
+  }
+  .category-heading {
+    padding: 0 1.6rem;
+  }
+}
+
+@media (max-width: 900px) {
+  section.inner-products-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.7rem;
+  }
+}
+
+@media (max-width: 530px) {
+  section.inner-products-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.7rem;
+  }
+}
+
+@media (max-width: 500px) {
+  section.products-page {
+    padding: 2rem 0.7rem;
+  }
+  .category-heading {
+    padding: 0 0.7rem;
+  }
+}
+
+@media (max-width: 400px) {
+  section.products-page {
+    flex-direction: column;
+  }
+  ul.category-links {
+    width: 100%;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 0.95rem;
+    overflow-x: scroll;
+    padding: 0.3rem 0;
+  }
+  .products-container {
+    width: 100%;
+  }
+}

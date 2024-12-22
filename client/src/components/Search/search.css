@@ -1,0 +1,85 @@
+section.search-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(20, 20, 20, 0.479);
+  z-index: 102;
+}
+section.search-container form {
+  background: white;
+  padding: 3rem;
+  position: relative;
+}
+section.search-container form div.search-content {
+  width: max-content;
+  margin: auto;
+}
+section.search-container input {
+  width: 25rem;
+  border: 1.7px solid #c9c9c9;
+  border-radius: 0.2rem;
+  padding: 0.6rem 0.7rem;
+}
+section.search-container button {
+  border: 1.7px solid var(--black);
+  font-weight: 600;
+  font-weight: 600;
+  background: none;
+  color: var(--black);
+  border: none;
+  padding: 0.4rem 0.2rem;
+}
+p.search-heading {
+  font-size: 0.95rem;
+  color: rgb(54, 54, 54);
+  margin-bottom: 0.5rem;
+}
+#search-close-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#inner-search {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+section.search-list {
+  margin: 2rem auto;
+  width: 28rem;
+}
+.search-product {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  border-bottom: 1.5px solid rgba(241, 241, 241, 0.877);
+  padding: 0.6rem 0.2rem;
+  transition: all 0.1s ease-in-out;
+}
+.search-product:hover {
+  background: rgba(247, 247, 247, 0.555);
+}
+
+@media (max-width: 600px) {
+  section.search-list {
+    margin: 2rem 0;
+    width: 100%;
+  }
+  section.search-container input {
+    width: 71%;
+  }
+  section.search-container form div.search-content {
+    width: 100%;
+  }
+  section.search-container form {
+    padding: 3rem 0.8rem;
+    height: 100%;
+  }
+}

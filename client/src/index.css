@@ -1,0 +1,70 @@
+:root {
+  --primary-color: rgb(255, 76, 76);
+  --black: rgb(20, 20, 20);
+  --white: whitesmoke;
+  --box-shadow: 10px 20px 25px 5px #ececec62;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+#icon {
+  width: 1.4rem;
+  cursor: pointer;
+}
+
+#cart-page-icon {
+  width: 1.1rem;
+  cursor: pointer;
+}
+
+#cancel-icon {
+  width: 2.05rem;
+}
+
+.footnote {
+  margin: 6rem 0 7rem;
+  text-align: center;
+  color: #ccc;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.inner-products-container {
+  align-items: start;
+}
+
+#delete-btn {
+  color: rgb(255, 45, 45);
+  background: white;
+  width: 96%;
+  box-sizing: border-box;
+  border: 1.5px solid rgb(255, 45, 45);
+  padding: 0.5rem;
+  margin: 1rem auto 0.3rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  display: block;
+  transition: all 0.2s ease-in-out;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+#delete-btn:hover {
+  background: rgb(255, 45, 45);
+  color: white;
+}
+
+#product {
+  padding-bottom: 0.05rem;
+}
+
+@media (max-width: 500px) {
+  .footnote {
+    font-size: 1.2rem;
+  }
+}
