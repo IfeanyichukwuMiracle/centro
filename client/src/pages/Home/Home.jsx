@@ -53,7 +53,7 @@ const Home = () => {
         <p className="title">Featured Products</p>
         {isGetting ? (
           <Loader isLoading={isGetting} />
-        ) : (
+        ) : featuredProducts.length > 0 ? (
           <>
             <div className="latest-arrivals">
               {featuredProducts.map((product) => {
@@ -67,6 +67,24 @@ const Home = () => {
               </button>
             </Link>
           </>
+        ) : (
+          <>
+            <p
+              style={{
+                fontSize: "1.1rem",
+                fontWeight: "600",
+                marginTop: "1rem",
+              }}
+            >
+              No products
+            </p>
+            <Link
+              to={`/category/all_products`}
+              style={{ color: "blue", textDecoration: "underline" }}
+            >
+              Keep shopping.
+            </Link>
+          </>
         )}
       </section>
 
@@ -76,7 +94,7 @@ const Home = () => {
         <p className="title">Latest Arrivals</p>
         {isGetting ? (
           <Loader isLoading={isGetting} />
-        ) : (
+        ) : latestArrivals.length > 0 ? (
           <>
             <div className="latest-arrivals">
               {latestArrivals.map((product) => {
@@ -88,6 +106,24 @@ const Home = () => {
               <button type="button" id="see-more-btn">
                 See more
               </button>
+            </Link>
+          </>
+        ) : (
+          <>
+            <p
+              style={{
+                fontSize: "1.1rem",
+                fontWeight: "600",
+                marginTop: "1rem",
+              }}
+            >
+              No products
+            </p>
+            <Link
+              to={`/category/all_products`}
+              style={{ color: "blue", textDecoration: "underline" }}
+            >
+              Keep shopping.
             </Link>
           </>
         )}

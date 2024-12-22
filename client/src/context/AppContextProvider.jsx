@@ -15,7 +15,7 @@ const reducer = (state, action) => {
     return { ...state, cart: [] };
   }
   if (action.type === "logout") {
-    return { ...state, token: "", role:"user" };
+    return { ...state, token: "", role: "user" };
   }
   if (action.type === "add_to_cart") {
     return {

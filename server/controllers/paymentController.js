@@ -9,9 +9,9 @@ const initializePayment = async (req, res, next) => {
       {
         email: req.body.email,
         amount: req.body.amount * 100,
-        callback_url: `http://localhost:5173/checkout`,
+        callback_url: `${process.env.CLIENT_URI}checkout`,
         metadata: {
-          cancel_action: `http://localhost:5173/cart`,
+          cancel_action: `${process.env.CLIENT_URI}cart`,
         },
       },
       {

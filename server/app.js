@@ -14,7 +14,7 @@ const orderRoutes = require("./routes/orderRoute");
 const paymentRoutes = require("./routes/paymentRoute");
 
 // start server
-startServer(process.env.MONGO_URI, PORT);
+startServer(process.env.MONGO_URI_2, PORT);
 
 // middleware
 app.use(cors());
