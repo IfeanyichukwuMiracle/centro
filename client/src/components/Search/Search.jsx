@@ -16,10 +16,10 @@ const Search = ({ setShowSearch }) => {
 
     try {
       const response1 = await axios.get(
-        `http://localhost:9000/api/v1/product?category=${search.toLowerCase()}`
+        `https://centro-api.onrender.com/api/v1/product?category=${search.toLowerCase()}`
       );
       const response2 = await axios.get(
-        `http://localhost:9000/api/v1/product?name=${search.toLowerCase()}`
+        `https://centro-api.onrender.com/api/v1/product?name=${search.toLowerCase()}`
       );
 
       const response =

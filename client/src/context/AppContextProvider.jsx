@@ -69,7 +69,9 @@ const AppContextProvider = ({ children }) => {
   const fetchProducts = async () => {
     setIsGetting(true);
     try {
-      const response = await axios.get(`http://localhost:9000/api/v1/product`);
+      const response = await axios.get(
+        `https://centro-api.onrender.com/api/v1/product`
+      );
       setProducts(response.data.data);
       setIsGetting(false);
     } catch (e) {

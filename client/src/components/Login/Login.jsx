@@ -19,7 +19,7 @@ const Login = ({ setShowLogin, setShowSignUp }) => {
 
     try {
       const response = await axios.post(
-        `http://localhost:9000/api/v1/user/login`,
+        `https://centro-api.onrender.com/api/v1/user/login`,
         user
       );
       dispatch({ type: "set_token", payload: { token: response.data.token } });

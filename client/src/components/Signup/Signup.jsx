@@ -27,7 +27,7 @@ const Signup = ({ setShowSignUp, setShowLogin }) => {
     if (confirmPassword === user.password) {
       try {
         const response = await axios.post(
-          `http://localhost:9000/api/v1/user/signup`,
+          `https://centro-api.onrender.com/api/v1/user/signup`,
           { ...rest }
         );
         dispatch({

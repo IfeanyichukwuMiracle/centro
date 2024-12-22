@@ -41,7 +41,7 @@ const Checkout = () => {
     localStorage.setItem("billing_details", JSON.stringify(billingDetails));
     try {
       const response = await axios.post(
-        `http://localhost:9000/api/v1/pay/transaction-initialize`,
+        `https://centro-api.onrender.com/api/v1/pay/transaction-initialize`,
         { email: billingDetails.email, amount: total }
       );
       toast.dismiss(toastId);
@@ -71,9 +71,12 @@ const Checkout = () => {
       return;
     }
     try {
-      const res = await axios.get(`http://localhost:9000/api/v1/user`, {
-        headers: { Authorization: `Bearer ${state.token}` },
-      });
+      const res = await axios.get(
+        `https://centro-api.onrender.com/api/v1/user`,
+        {
+          headers: { Authorization: `Bearer ${state.token}` },
+        }
+      );
       const { firstname, lastname, email } = res.data.data;
       setBillingDetails((prevData) => {
         return { ...prevData, firstname, lastname, email };
@@ -99,7 +102,7 @@ const Checkout = () => {
   async function verifyTrx(ref) {
     try {
       const response = await axios.post(
-        `http://localhost:9000/api/v1/pay/${ref}`,
+        `https://centro-api.onrender.com/api/v1/pay/${ref}`,
         {
           products: state.cart,
           ...JSON.parse(localStorage.getItem("billing_details")),

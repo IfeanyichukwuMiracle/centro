@@ -66,7 +66,7 @@ const Dashboard = () => {
     const toastId = toast.loading("Fulfilling Order!");
     try {
       await axios.patch(
-        `http://localhost:9000/api/v1/order/${id}`,
+        `https://centro-api.onrender.com/api/v1/order/${id}`,
         {},
         { headers: { Authorization: `Bearer ${state.token}` } }
       );
@@ -103,12 +103,16 @@ const Dashboard = () => {
     console.log(form_data);
 
     try {
-      await axios.post(`http://localhost:9000/api/v1/product/post`, form_data, {
-        headers: {
-          Authorization: `Bearer ${state.token}`,
-          "Content-Type": "multipart/form-data",
-        },
-      });
+      await axios.post(
+        `https://centro-api.onrender.com/api/v1/product/post`,
+        form_data,
+        {
+          headers: {
+            Authorization: `Bearer ${state.token}`,
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
       toast.dismiss(toastId);
       toast.success(`Product added!`);
       setProduct({
@@ -137,14 +141,18 @@ const Dashboard = () => {
       return;
     }
     if (dashboardId === "add") return;
-    getData(`http://localhost:9000/api/v1/product`, setProducts, false);
     getData(
-      `http://localhost:9000/api/v1/order/pending`,
+      `https://centro-api.onrender.com/api/v1/product`,
+      setProducts,
+      false
+    );
+    getData(
+      `https://centro-api.onrender.com/api/v1/order/pending`,
       setPendingOrders,
       true
     );
     getData(
-      `http://localhost:9000/api/v1/order/fulfilled`,
+      `https://centro-api.onrender.com/api/v1/order/fulfilled`,
       setFulfilledOrders,
       true
     );

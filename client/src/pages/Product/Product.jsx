@@ -48,7 +48,7 @@ const Product = () => {
     setIsGetting(true);
     try {
       const res = await axios.get(
-        `http://localhost:9000/api/v1/product?category=${category}&limit=4`
+        `https://centro-api.onrender.com/api/v1/product?category=${category}&limit=4`
       );
       setProducts(res.data.data);
       setIsGetting(false);
@@ -95,7 +95,7 @@ const Product = () => {
     setIsFetching(true);
     try {
       const response = await axios.get(
-        `http://localhost:9000/api/v1/product/${productId}`
+        `https://centro-api.onrender.com/api/v1/product/${productId}`
       );
       setProduct(response.data.data);
       setEditProduct(() => {
@@ -118,7 +118,7 @@ const Product = () => {
   async function fetchReviews() {
     try {
       const response = await axios.get(
-        `http://localhost:9000/api/v1/review/${productId}`
+        `https://centro-api.onrender.com/api/v1/review/${productId}`
       );
       setReviews(response.data.data);
     } catch (e) {
@@ -135,7 +135,7 @@ const Product = () => {
     }
     try {
       await axios.post(
-        `http://localhost:9000/api/v1/review/${productId}`,
+        `https://centro-api.onrender.com/api/v1/review/${productId}`,
         { review },
         { headers: { Authorization: `Bearer ${state.token}` } }
       );
@@ -157,7 +157,7 @@ const Product = () => {
     const toastId = toast.loading("Deleting product.");
     try {
       await axios.patch(
-        `http://localhost:9000/api/v1/product/delete/${id}`,
+        `https://centro-api.onrender.com/api/v1/product/delete/${id}`,
         {},
         {
           headers: { Authorization: `Bearer ${state.token}` },
@@ -195,7 +195,7 @@ const Product = () => {
 
     try {
       await axios.patch(
-        `http://localhost:9000/api/v1/product/${product._id}`,
+        `https://centro-api.onrender.com/api/v1/product/${product._id}`,
         form_data,
         {
           headers: {

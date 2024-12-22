@@ -16,14 +16,14 @@ const Products = () => {
     try {
       if (categoryId === "all_products") {
         const res = await axios.get(
-          `http://localhost:9000/api/v1/product?limit=${10}`
+          `https://centro-api.onrender.com/api/v1/product?limit=${10}`
         );
         setProducts(res.data.data);
         setIsFetching(false);
         return;
       }
       const res = await axios.get(
-        `http://localhost:9000/api/v1/product?category=${categoryId}`
+        `https://centro-api.onrender.com/api/v1/product?category=${categoryId}`
       );
       setProducts(res.data.data);
       setIsFetching(false);

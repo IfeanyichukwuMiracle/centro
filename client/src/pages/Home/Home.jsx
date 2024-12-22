@@ -34,11 +34,11 @@ const Home = () => {
 
   useEffect(() => {
     getProducts(
-      `http://localhost:9000/api/v1/product/featured-products`,
+      `https://centro-api.onrender.com/api/v1/product/featured-products`,
       setFeaturedProducts
     );
     getProducts(
-      `http://localhost:9000/api/v1/product/latest-arrivals`,
+      `https://centro-api.onrender.com/api/v1/product/latest-arrivals`,
       setLatestArrivals
     );
   }, []);
