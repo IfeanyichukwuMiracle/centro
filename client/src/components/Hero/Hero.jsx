@@ -9,8 +9,7 @@ const Hero = () => {
         <section className="hero-text">
           <div className="hero-content">
             <p className="preheading">Clear Sounds</p>
-            <p className="hero-heading">Be Audible!</p>
-            <p className="body">Devices you can trust!</p>
+            <p className="hero-heading">Audio Gears You Can Trust</p>
             <Link to={`/category/all_products`}>
               <button type="button" id="hero-btn">
                 Shop now!

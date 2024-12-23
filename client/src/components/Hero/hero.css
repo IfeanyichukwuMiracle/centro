@@ -40,21 +40,17 @@ p.hero-heading {
   margin-bottom: 0rem;
   color: white;
 }
-section.hero p.body {
-  font-size: 1rem;
-  line-height: 1.7rem;
-  color: whitesmoke;
-}
+
 button#hero-btn {
   margin-top: 0.3rem;
-  background: none;
-  color: white;
+  background: white;
+  color: var(--black);
   border: 1.9px solid white;
   border-radius: 0.3rem;
   cursor: pointer;
   font-weight: 400;
   font-size: 1rem;
-  padding: 0.3rem 0.4rem 0.4rem;
+  padding: 0.3rem 0.6rem 0.4rem;
 }
 
 @media (max-width: 980px) {
