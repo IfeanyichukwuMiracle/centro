@@ -1,6 +1,6 @@
 section.cart-menu {
   transition: all 0.4s ease-in-out;
-  min-height: 30rem;
+  min-height: 100vh;
   max-height: 100vh;
   padding: 2rem 1rem;
   background: white;
