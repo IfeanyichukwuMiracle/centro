@@ -49,7 +49,7 @@ button.popup-btn {
 }
 
 div.cart-menu-products-container {
-  height: auto;
+  height: 50%;
   width: 100%;
   overflow-y: scroll;
 }
