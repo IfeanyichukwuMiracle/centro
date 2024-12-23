@@ -129,6 +129,7 @@ const Dashboard = () => {
       }, 1200);
       return;
     } catch (e) {
+      console.log(e.response);
       toast.dismiss(toastId);
       toast.error(e.response.data.message);
       return;
