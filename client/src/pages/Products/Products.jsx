@@ -41,6 +41,8 @@ const Products = () => {
       navigate("/error");
       return;
     }
+    document.title = "Centro | Products";
+
     getProducts();
   }, [categoryId]);
   return (

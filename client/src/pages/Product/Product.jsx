@@ -98,6 +98,7 @@ const Product = () => {
         `https://centro-api.onrender.com/api/v1/product/${productId}`
       );
       setProduct(response.data.data);
+      document.title = `Centro | Product | ${response.data.data.name}`;
       setEditProduct(() => {
         const newObj = { ...response.data.data };
         delete newObj["image"];

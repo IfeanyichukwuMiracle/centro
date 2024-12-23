@@ -29,6 +29,7 @@ const Cart = () => {
     setTotal(totalAmt);
   }
   useEffect(() => {
+    document.title = `Centro | Cart - (${state.cart.length}) Items`;
     getTotal();
   }, [state]);
   return (

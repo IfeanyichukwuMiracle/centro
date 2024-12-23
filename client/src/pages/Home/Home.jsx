@@ -33,6 +33,7 @@ const Home = () => {
   }
 
   useEffect(() => {
+    document.title = "Centro | Home | Audio Gadgets";
     getProducts(
       `https://centro-api.onrender.com/api/v1/product/featured-products`,
       setFeaturedProducts

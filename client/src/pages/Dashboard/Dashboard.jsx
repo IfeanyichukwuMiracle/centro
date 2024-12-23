@@ -144,6 +144,7 @@ const Dashboard = () => {
       navigate("/error");
       return;
     }
+    document.title = "Centro | Dashboard";
     if (dashboardId === "add") return;
     getData(
       `https://centro-api.onrender.com/api/v1/product`,

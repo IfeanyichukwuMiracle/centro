@@ -19,8 +19,8 @@ section.hero section {
   position: absolute;
   height: 100%;
   top: 0;
-  background: rgba(141, 18, 18, 0.555);
-  backdrop-filter: blur(3px);
+  background: rgba(112, 14, 14, 0.616);
+  backdrop-filter: blur(5px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,9 +38,9 @@ p.preheading {
 p.hero-heading {
   font-size: 4rem;
   font-weight: 800;
-  margin: 1.5rem 0 0.7rem;
+  margin: 2.5rem 0 2rem;
   color: white;
-  line-height: 2.2rem;
+  line-height: 3.1rem;
 }
 
 button#hero-btn {
@@ -73,5 +73,6 @@ button#hero-btn {
   p.hero-heading {
     font-size: 2.2rem;
     line-height: 1.9rem;
+    margin: 1.5rem 0 0.7rem;
   }
 }

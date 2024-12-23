@@ -157,6 +157,7 @@ const Checkout = () => {
       navigate("/cart");
       return;
     }
+    document.title = "Centro | Checkout";
     getTotal();
     getTrxrefVerifyTrx();
     getUser();
