@@ -19,7 +19,7 @@ section.hero section {
   position: absolute;
   height: 100%;
   top: 0;
-  background: rgba(236, 0, 0, 0.678);
+  background: rgba(233, 30, 30, 0.781);
   backdrop-filter: blur(3px);
   display: flex;
   flex-direction: column;
