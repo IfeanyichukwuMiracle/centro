@@ -129,6 +129,7 @@ const Product = () => {
   }
 
   async function sendReview(e) {
+    const toastId = toast.loading("Sending review!");
     e.preventDefault();
     if (!review) {
       toast.error(`Field empty!`);
@@ -140,11 +141,13 @@ const Product = () => {
         { review },
         { headers: { Authorization: `Bearer ${state.token}` } }
       );
+      toast.dismiss(toastId);
       toast.success(`Review sent!`);
       setTimeout(() => {
         window.location.reload();
       }, 1500);
     } catch (e) {
+      toast.dismiss(toastId);
       toast.error(`${e.response.data.message}! to send review`);
       return;
     }
