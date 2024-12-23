@@ -143,6 +143,7 @@ p.more-title {
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   margin-top: 1.8rem;
+  align-items: start;
 }
 .more-section-products div#product {
   border-radius: 0.4rem;
