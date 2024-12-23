@@ -49,7 +49,7 @@ const ProductCard = ({ product }) => {
             <p className="price">&#8358;{product.price}</p>
           </div>
         </Link>
-        {state.token && state.role === "admin" && (
+        {/* {state.token && state.role === "admin" && (
           <button
             id="delete-btn"
             style={{ display: "block" }}
@@ -59,7 +59,7 @@ const ProductCard = ({ product }) => {
           >
             Delete
           </button>
-        )}
+        )} */}
       </div>
     </>
   );

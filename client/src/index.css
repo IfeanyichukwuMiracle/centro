@@ -40,11 +40,11 @@
 }
 
 #delete-btn {
-  color: rgb(255, 45, 45);
-  background: white;
-  width: 96%;
+  color: white;
+  background: var(--black);
+  width: 100%;
   box-sizing: border-box;
-  border: 1.5px solid rgb(255, 45, 45);
+  border: 1.5px solid var(--black);
   padding: 0.5rem;
   margin: 1rem auto 0.3rem;
   border-radius: 0.2rem;
