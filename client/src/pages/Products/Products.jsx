@@ -84,7 +84,7 @@ const Products = () => {
                 to={`/category/${category}`}
               >
                 <li id={`${category}`} className="category-link">
-                  {category === "all_products" ? `all products` : category}
+                  {category.split("_").join(" ")}
                 </li>
               </Link>
             );

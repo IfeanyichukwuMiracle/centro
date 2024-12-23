@@ -61,6 +61,9 @@ section.cart-menu-product img {
   margin: 0.5rem 0;
   border-radius: 0.2rem;
 }
+section.cart-menu-product .cart-menu-details {
+  width: auto;
+}
 #remove-btn {
   color: blue;
   background: none;
