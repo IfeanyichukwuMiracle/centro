@@ -50,6 +50,7 @@ button.popup-btn {
 
 div.cart-menu-products-container {
   height: 50%;
+  max-height: 10rem;
   width: 100%;
   overflow-y: scroll;
 }
