@@ -39,7 +39,7 @@ const uploadImages = async function (arr, next, res, product, type) {
                 .status(200)
                 .json({ status: "success", data: newProduct });
             } catch (e) {
-              console.log(e.message, 500, "error");
+              console.log(e.message);
               return next(new AppError(e.message, 500, "Error"));
             }
           } else {
@@ -66,6 +66,7 @@ const addProduct = async (req, res, next) => {
 
     // upload images
     await uploadImages(req.files, next, res, product, "add");
+    return;
   } catch (e) {
     console.log(e);
     return next(new AppError(e.message, 500, "error"));
