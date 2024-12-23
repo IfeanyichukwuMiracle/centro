@@ -68,7 +68,7 @@ const Search = ({ setShowSearch }) => {
                 onChange={(e) => {
                   setSearch(e.target.value);
                 }}
-                placeholder="Enter Search"
+                placeholder="Enter product name or category"
               />
               <button
                 type="submit"
