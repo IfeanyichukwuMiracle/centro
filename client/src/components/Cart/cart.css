@@ -1,18 +1,17 @@
 section.cart-menu {
   transition: all 0.4s ease-in-out;
-  min-height: 100vh;
-  max-height: 100rem;
+  min-height: 30rem;
+  max-height: 100vh;
   padding: 2rem 1rem;
   background: white;
-  /* min-width: max-content; */
-  width: 18rem;
+  width: 18.5rem;
   box-shadow: 10px 20px 25px 5px #8f8e8e18;
   position: fixed;
   top: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 1.5rem;
   z-index: 100;
   transition: all 0.3s ease-in-out;
   overflow-y: scroll;
@@ -49,10 +48,9 @@ button.popup-btn {
 }
 
 div.cart-menu-products-container {
-  height: 100%;
-  max-height: 10rem;
-  max-width: 10rem;
-  width: 50%;
+  height: auto;
+  max-height: 27rem;
+  width: 100%;
   overflow-y: scroll;
 }
 

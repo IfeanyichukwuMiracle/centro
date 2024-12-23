@@ -40,7 +40,7 @@ const Cart = ({ setShowCart, showCart }) => {
       <section className="popup-content">
         <p className="cart-menu-title">Cart Items</p>
         {state.cart.length > 0 ? (
-          <div className="cart-menu-products-container">
+          <>
             {state.cart.map((product) => {
               return (
                 <>
@@ -109,7 +109,7 @@ const Cart = ({ setShowCart, showCart }) => {
                 </>
               );
             })}
-          </div>
+          </>
         ) : (
           <section className="empty-cart">
             <div>
