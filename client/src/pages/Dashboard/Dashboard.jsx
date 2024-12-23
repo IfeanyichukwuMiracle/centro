@@ -100,7 +100,7 @@ const Dashboard = () => {
     for (let i = 0; i < files.length; i++) {
       form_data.append(`files`, files[i]);
     }
-    console.log(form_data);
+    // console.log(form_data);
 
     try {
       await axios.post(
@@ -124,6 +124,9 @@ const Dashboard = () => {
         category: "",
         files: [],
       });
+      setTimeout(() => {
+        navigate(`/dashboard/products`);
+      }, 1200);
       return;
     } catch (e) {
       toast.dismiss(toastId);
