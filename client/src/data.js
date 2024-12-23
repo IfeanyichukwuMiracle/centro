@@ -39,13 +39,9 @@ const states = [
 ];
 let product_categories = [
   "all_products",
-  "phone",
-  "laptop",
-  "headphone",
-  "earpiece",
+  "audio_interfaces",
   "accessories",
   "microphones",
-  "tablet",
 ];
 const dashboard_ids = ["overview", "products", "pending", "fulfilled", "add"];
 

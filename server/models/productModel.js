@@ -17,16 +17,8 @@ const productSchema = new mongoose.Schema({
     type: String,
     required: [true, "category is required"],
     enum: {
-      values: [
-        "phone",
-        "laptop",
-        "headphone",
-        "earpiece",
-        "accessories",
-        "microphones",
-        "tablet",
-      ],
-      message: "catgory not valid",
+      values: ["accessories", "microphones", "audio interfaces"],
+      message: "category not valid",
     },
     default: "phone",
   },

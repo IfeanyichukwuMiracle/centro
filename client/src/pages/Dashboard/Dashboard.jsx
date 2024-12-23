@@ -415,7 +415,7 @@ const Dashboard = () => {
                     {new_categories.map((item) => {
                       return (
                         <option key={item} value={item}>
-                          {item}
+                          {item.split("_").join(" ")}
                         </option>
                       );
                     })}

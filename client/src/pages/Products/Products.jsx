@@ -23,7 +23,9 @@ const Products = () => {
         return;
       }
       const res = await axios.get(
-        `https://centro-api.onrender.com/api/v1/product?category=${categoryId}`
+        `https://centro-api.onrender.com/api/v1/product?category=${categoryId
+          .split("_")
+          .join(" ")}`
       );
       setProducts(res.data.data);
       setIsFetching(false);
