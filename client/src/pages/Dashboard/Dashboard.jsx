@@ -431,7 +431,6 @@ const Dashboard = () => {
                         ...prevData,
                         [e.target.name]: [...e.target.files],
                       }));
-                      console.log(e.target.files);
                     }}
                   />
                 </div>
