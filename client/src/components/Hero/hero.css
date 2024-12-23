@@ -37,9 +37,9 @@ p.preheading {
 p.hero-heading {
   font-size: 4rem;
   font-weight: 800;
-  margin-bottom: 0rem;
+  margin: 0.5rem 0 1rem;
   color: white;
-  line-height: 1.5rem;
+  line-height: 1.9rem;
 }
 
 button#hero-btn {

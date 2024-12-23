@@ -10,6 +10,8 @@ import Wishlist from "../Wishlist/Wishlist";
 import toast, { Toaster } from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
 
+import centro_logo from "../../assets/centro.png";
+
 const Header = () => {
   const [hide, setHide] = useState(true);
   const [showSignup, setShowSignUp] = useState(false);
@@ -90,7 +92,12 @@ const Header = () => {
             />
           </svg>
           <Link to={`/`} style={{ color: "var(--black)" }}>
-            <p className="logo">Centro</p>
+            <img
+              src={centro_logo}
+              alt="centro_logo"
+              style={{ display: "block" }}
+              className="logo"
+            />
           </Link>
         </div>
 

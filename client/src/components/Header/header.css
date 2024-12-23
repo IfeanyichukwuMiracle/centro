@@ -30,8 +30,7 @@ section.header ul {
   align-items: center;
 }
 p.logo {
-  font-size: 1.2rem;
-  font-weight: 600;
+  width: 6rem;
 }
 
 section.promo {

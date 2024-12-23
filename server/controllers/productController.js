@@ -30,6 +30,8 @@ const uploadImages = async function (arr, next, res, product, type) {
         // when complete create product and send response
         if (imgs.length === arr.length) {
           if (type === "add") {
+            console.log(imgs);
+
             try {
               const newProduct = await Product.create({
                 ...product,
