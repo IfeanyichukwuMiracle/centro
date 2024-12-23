@@ -129,9 +129,9 @@ const Dashboard = () => {
       }, 1200);
       return;
     } catch (e) {
-      console.log(e.response);
+      console.log(e);
       toast.dismiss(toastId);
-      toast.error(e.response.data.message);
+      toast.error(`Upload error! Check connection and try again.`);
       return;
     }
   }
