@@ -39,6 +39,7 @@ p.hero-heading {
   font-weight: 800;
   margin-bottom: 0rem;
   color: white;
+  line-height: 0.5rem;
 }
 
 button#hero-btn {
