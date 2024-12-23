@@ -30,8 +30,6 @@ const uploadImages = async function (arr, next, res, product, type) {
         // when complete create product and send response
         if (imgs.length === arr.length) {
           if (type === "add") {
-            console.log(imgs);
-
             try {
               const newProduct = await Product.create({
                 ...product,
@@ -108,6 +106,7 @@ const editProduct = async (req, res, next) => {
     // send response
     return res.status(200).json({ status: "success", data: product });
   } catch (e) {
+    console.log(e);
     return next(new AppError(e.message, 500, "error"));
   }
 };

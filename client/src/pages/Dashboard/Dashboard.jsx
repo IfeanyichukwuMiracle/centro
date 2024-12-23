@@ -414,7 +414,7 @@ const Dashboard = () => {
                     <option value="">--Select Category--</option>
                     {new_categories.map((item) => {
                       return (
-                        <option key={item} value={item}>
+                        <option key={item} value={item.split("_").join(" ")}>
                           {item.split("_").join(" ")}
                         </option>
                       );
