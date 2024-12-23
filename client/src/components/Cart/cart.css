@@ -39,7 +39,7 @@ p.cart-menu-title {
 
 button.popup-btn {
   width: 100%;
-  background: var(--black);
+  background: var(--red);
   color: white;
   border: none;
   padding: 0.5rem 0;
