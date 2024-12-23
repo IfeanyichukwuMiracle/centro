@@ -40,72 +40,76 @@ const Cart = ({ setShowCart, showCart }) => {
       <section className="popup-content">
         <p className="cart-menu-title">Cart Items</p>
         {state.cart.length > 0 ? (
-          state.cart.map((product) => {
-            return (
-              <section className="cart-menu-product" key={product._id}>
-                <img
-                  src={product.image[0]}
-                  alt={product.name}
-                  id="cart-menu-img"
-                />
-                <div className="cart-menu-details">
-                  <p className="cart-menu-name">{product.name}</p>
-                  <p className="cart-menu-price">&#8358;{product.price}</p>
-                  <div className="cart-menu-quantity">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.9}
-                      stroke="currentColor"
-                      className="size-6"
-                      id="cart-page-icon"
-                      onClick={() => {
-                        if (product.amount > 1) {
-                          decreaseAmount(product._id);
-                        }
-                      }}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M5 12h14"
-                      />
-                    </svg>
-                    <span>{product.amount}</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.9}
-                      stroke="currentColor"
-                      className="size-6"
-                      id="cart-page-icon"
-                      onClick={() => {
-                        if (product.amount < product.quantity) {
-                          increaseAmount(product._id);
-                        }
-                      }}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M12 4.5v15m7.5-7.5h-15"
-                      />
-                    </svg>
-                  </div>
-                  <button
-                    id="remove-btn"
-                    onClick={() => {
-                      removeProduct(product._id);
-                    }}
-                  >
-                    remove
-                  </button>
-                </div>
-              </section>
-            );
-          })
+          <div className="cart-menu-products-container">
+            {state.cart.map((product) => {
+              return (
+                <>
+                  <section className="cart-menu-product" key={product._id}>
+                    <img
+                      src={product.image[0]}
+                      alt={product.name}
+                      id="cart-menu-img"
+                    />
+                    <div className="cart-menu-details">
+                      <p className="cart-menu-name">{product.name}</p>
+                      <p className="cart-menu-price">&#8358;{product.price}</p>
+                      <div className="cart-menu-quantity">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={1.9}
+                          stroke="currentColor"
+                          className="size-6"
+                          id="cart-page-icon"
+                          onClick={() => {
+                            if (product.amount > 1) {
+                              decreaseAmount(product._id);
+                            }
+                          }}
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M5 12h14"
+                          />
+                        </svg>
+                        <span>{product.amount}</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={1.9}
+                          stroke="currentColor"
+                          className="size-6"
+                          id="cart-page-icon"
+                          onClick={() => {
+                            if (product.amount < product.quantity) {
+                              increaseAmount(product._id);
+                            }
+                          }}
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M12 4.5v15m7.5-7.5h-15"
+                          />
+                        </svg>
+                      </div>
+                      <button
+                        id="remove-btn"
+                        onClick={() => {
+                          removeProduct(product._id);
+                        }}
+                      >
+                        remove
+                      </button>
+                    </div>
+                  </section>
+                </>
+              );
+            })}
+          </div>
         ) : (
           <section className="empty-cart">
             <div>
