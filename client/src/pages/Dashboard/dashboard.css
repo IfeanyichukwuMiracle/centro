@@ -94,14 +94,14 @@ div.pending-order-products div#product {
   border: none;
   font-size: 1rem;
   color: white;
-  background: var(--black);
+  background: var(--red);
   border-radius: 0.2rem;
   cursor: pointer;
   margin: 1rem 0;
   transition: all 0.2s ease-in-out;
 }
 #fulfill-btn:hover {
-  background: rgb(54, 54, 54);
+  background: var(--red);
 }
 
 /* add products form */
@@ -123,7 +123,7 @@ form.add-products-form div textarea {
   font-size: 0.9rem;
 }
 #select-img-btn {
-  background: var(--black);
+  background: var(--red);
   color: white;
   font-size: 0.85rem;
   padding: 0.2rem 0.3rem;
@@ -131,7 +131,7 @@ form.add-products-form div textarea {
   cursor: pointer;
 }
 #add-product-btn {
-  background: var(--black);
+  background: var(--red);
   width: 100%;
   color: white;
   padding: 0.5rem;
@@ -160,8 +160,8 @@ form.add-products-form div textarea {
   width: 100%;
   padding: 0.5rem;
   border-radius: 0.2rem;
-  color: rgb(65, 238, 65);
-  border: 1.5px solid rgb(65, 238, 65);
+  color: rgb(59, 212, 59);
+  border: 1.5px solid rgb(59, 212, 59);
   text-align: center;
   margin: 1rem 0;
 }

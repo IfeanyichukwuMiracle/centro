@@ -19,7 +19,8 @@ section.hero section {
   position: absolute;
   height: 100%;
   top: 0;
-  background: rgba(238, 0, 0, 0.24);
+  background: rgba(236, 0, 0, 0.678);
+  backdrop-filter: blur(3px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,7 +50,7 @@ button#hero-btn {
   border: 1.9px solid white;
   border-radius: 0.3rem;
   cursor: pointer;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1rem;
   padding: 0.3rem 0.6rem 0.4rem;
 }

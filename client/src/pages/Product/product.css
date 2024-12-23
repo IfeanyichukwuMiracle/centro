@@ -118,7 +118,7 @@ div.reviews-section textarea {
   margin-bottom: 0.3rem;
 }
 div.reviews-section button {
-  background: var(--black);
+  background: var(--red);
   color: white;
   padding: 0.4rem;
   border-radius: 0.2rem;
@@ -151,8 +151,8 @@ p.more-title {
 }
 
 #add-btn {
-  border: 1.7px solid var(--black);
-  color: var(--black);
+  border: 1.7px solid var(--red);
+  color: var(--red);
   font-weight: 600;
   font-size: 1rem;
   background: white;
@@ -163,11 +163,11 @@ p.more-title {
   cursor: pointer;
 }
 #buy-btn {
-  border: 1.7px solid var(--black);
+  border: 1.7px solid var(--red);
   color: white;
   font-weight: 600;
   font-size: 1rem;
-  background: var(--black);
+  background: var(--red);
   width: 100%;
   margin-top: 0.8rem;
   border-radius: 0.3rem;

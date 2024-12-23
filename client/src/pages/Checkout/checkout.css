@@ -109,7 +109,7 @@ div.checkout-auth {
 }
 
 #order-btn {
-  background: var(--black);
+  background: var(--red);
   color: white;
   padding: 0.5rem;
   border: none;
@@ -122,7 +122,7 @@ div.checkout-auth {
 }
 #order-btn:hover {
   transform: scale(1.03);
-  background: rgb(36, 36, 36);
+  background: var(--red);
 }
 
 section.success {

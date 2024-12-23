@@ -34,7 +34,7 @@ p.logo {
 }
 
 section.promo {
-  background: var(--black);
+  background: var(--red);
   color: var(--white);
   font-weight: 600;
   padding: 0.4rem 0;

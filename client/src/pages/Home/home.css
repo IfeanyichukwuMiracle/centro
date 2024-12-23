@@ -48,8 +48,9 @@ p.title {
   background: #bdbdbd;
 }
 button#see-more-btn {
-  border: 1.5px solid var(--black);
+  border: 1.5px solid var(--red);
   background: white;
+  color: var(--red);
   font-size: 1rem;
   font-weight: 600;
   padding: 0.2rem 0.3rem 0.3rem;

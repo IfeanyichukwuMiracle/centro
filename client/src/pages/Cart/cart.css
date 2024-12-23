@@ -71,7 +71,7 @@ section.cart-card {
   width: 100%;
   border-radius: 0.2rem;
   border: none;
-  background: var(--black);
+  background: var(--red);
   color: white;
   font-size: 1rem;
   font-weight: 400;
